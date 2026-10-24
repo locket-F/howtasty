@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>아이봄 - 따뜻한 육아 동반자</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "on-primary-fixed": "#400200", "tertiary-fixed": "#ffddb4", "secondary-container": "#aaefc7", "on-error": "#ffffff", "on-secondary": "#ffffff", "text-charcoal": "#2E2B2A", "inverse-primary": "#ffb4a6", "secondary-fixed-dim": "#91d5af", "on-secondary-container": "#2c6e4f", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#633f00", "primary-fixed": "#ffdad4", "on-secondary-fixed-variant": "#045134", "on-surface": "#1c1c18", "on-tertiary": "#ffffff", "secondary": "#276a4b", "on-error-container": "#93000a", "on-background": "#1c1c18", "sage-mint": "#6CAE8A", "primary-fixed-dim": "#ffb4a6", "primary": "#a13e2e", "baby-peach": "#F47D68", "error": "#ba1a1a", "tertiary-container": "#cf953f", "sage-subtle": "#EBF4EF", "tertiary-fixed-dim": "#fabb61", "peach-subtle": "#FDECE7", "on-tertiary-fixed": "#291800", "secondary-fixed": "#adf1ca", "surface": "#fdf9f3", "error-container": "#ffdad6", "sun-honey": "#F7B85E", "border-warm": "#EFE7DC", "tertiary": "#825500", "surface-bright": "#fdf9f3", "outline-variant": "#ddc0bb", "surface-container-high": "#ebe8e2", "cream-ivory": "#FAF6F0", "on-primary-container": "#6b170b", "on-primary-fixed-variant": "#812719", "surface-tint": "#a13e2e", "surface-container": "#f1ede7", "on-secondary-fixed": "#002112", "inverse-on-surface": "#f4f0ea", "primary-container": "#f47d68", "background": "#fdf9f3", "inverse-surface": "#31302d", "honey-subtle": "#FEF6E9", "text-subtle": "#7C7571", "surface-container-highest": "#e6e2dc", "on-tertiary-container": "#4e3100", "surface-dim": "#dddad4", "outline": "#8a726d", "surface-card": "#FFFFFF", "surface-variant": "#e6e2dc", "surface-container-low": "#f7f3ed", "on-surface-variant": "#56423e" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-xl": "2rem", "gutter": "1rem", "gutter-sm": "0.75rem", "space-xs": "0.25rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-desktop": "2rem", "margin": "1rem" }, fontFamily: { "display-lg": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-sm": ["17px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } }</script><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-peach-subtle selection:text-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(92,60,48,0.04)]"><div class="h-16 max-w-[480px] mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-peach-subtle flex items-center justify-center overflow-hidden shrink-0"><span class="material-symbols-outlined text-primary text-[22px]">child_care</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">아이봄</span><span class="font-label-sm text-label-sm text-text-subtle leading-none">Outing Map</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="알림" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/50 transition-colors relative"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface"></span></button><a aria-label="마이페이지" class="w-11 h-11 flex items-center justify-center" data-path="mypage-settings" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBAE1AItuG9Uihs0hCROht1RTqQYpL-XF0_sAcvAdJZceofpHZP3FaGZdRO5AGl13PJL6bxrNyx_DSdp9l5-swRTBruPc4-QXerQrTRVFd5myyC8-Eek1Z0Q3PUKglrsu4BtpM8fg4h1AohB2a14yAmTyS78gbXdGHP1hdrS0YbJa-qQVQSWsKSSa0wo-tGGCioaualIMUvNuzklgajWVUduDbbRm8Lk8K-Z6vm5uqbphvAtOZGMr-"/></a></div></div></header><main class="flex-1 w-full max-w-[480px] mx-auto px-margin pt-16 pb-24 bg-surface flex flex-col"><div class="flex flex-col w-full pb-6">
+<!-- 상단 검색 및 필터 헤더 섹션 -->
+<div class="flex flex-col gap-space-sm pt-2">
+<!-- 검색 인풋 박스 -->
+<div class="relative w-full">
+<div class="w-full h-12 bg-surface-container-lowest rounded-full shadow-[0_4px_16px_-2px_rgba(92,60,48,0.06)] flex items-center px-4 gap-space-sm focus-within:ring-2 focus-within:ring-baby-peach/30 transition-all">
+<span class="material-symbols-outlined text-primary text-[22px]">search</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-text-subtle focus:outline-none" placeholder="유모차 대여, 수유실 있는 아기 명소 검색" type="text"/>
+<button aria-label="음성 검색" class="w-8 h-8 rounded-full flex items-center justify-center text-text-subtle hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+</div>
+</div>
+<!-- 필수 편의시설 퀵 태그 (가로 스크롤) -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1 -mx-margin px-margin">
+<button class="tag-chip shrink-0 px-3.5 py-1.5 rounded-full bg-peach-subtle text-primary font-label-sm text-label-sm flex items-center gap-1 shadow-sm active:scale-95 transition-transform" data-tag="all" type="button">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">check</span>
+<span>전체보기</span>
+</button>
+<button class="tag-chip shrink-0 px-3 py-1.5 rounded-full bg-surface-container-lowest text-text-charcoal font-label-sm text-label-sm flex items-center gap-1 shadow-sm hover:bg-peach-subtle/50 active:scale-95 transition-all" data-tag="stroller" type="button">
+<span class="material-symbols-outlined text-[15px] text-sage-mint">stroller</span>
+<span>#유모차진입가능</span>
+</button>
+<button class="tag-chip shrink-0 px-3 py-1.5 rounded-full bg-surface-container-lowest text-text-charcoal font-label-sm text-label-sm flex items-center gap-1 shadow-sm hover:bg-peach-subtle/50 active:scale-95 transition-all" data-tag="nursing" type="button">
+<span class="material-symbols-outlined text-[15px] text-baby-peach">baby_changing_station</span>
+<span>#수유실완비</span>
+</button>
+<button class="tag-chip shrink-0 px-3 py-1.5 rounded-full bg-surface-container-lowest text-text-charcoal font-label-sm text-label-sm flex items-center gap-1 shadow-sm hover:bg-peach-subtle/50 active:scale-95 transition-all" data-tag="diaper" type="button">
+<span class="material-symbols-outlined text-[15px] text-sun-honey">child_care</span>
+<span>#기저귀교환대</span>
+</button>
+<button class="tag-chip shrink-0 px-3 py-1.5 rounded-full bg-surface-container-lowest text-text-charcoal font-label-sm text-label-sm flex items-center gap-1 shadow-sm hover:bg-peach-subtle/50 active:scale-95 transition-all" data-tag="chair" type="button">
+<span class="material-symbols-outlined text-[15px] text-secondary">chair_alt</span>
+<span>#아기의자</span>
+</button>
+<button class="tag-chip shrink-0 px-3 py-1.5 rounded-full bg-surface-container-lowest text-text-charcoal font-label-sm text-label-sm flex items-center gap-1 shadow-sm hover:bg-peach-subtle/50 active:scale-95 transition-all" data-tag="parking" type="button">
+<span class="material-symbols-outlined text-[15px] text-text-subtle">local_parking</span>
+<span>#무료주차</span>
+</button>
+</div>
+</div>
+<!-- 지도 및 리스트 토글 바 -->
+<div class="flex items-center justify-between mt-3 mb-2 px-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">내 주변 인기 나들이 장소</span>
+<span class="px-2 py-0.5 rounded-full bg-peach-subtle text-primary font-label-sm text-label-sm">3곳 추천</span>
+</div>
+<div class="flex items-center bg-surface-container-high/60 rounded-full p-0.5 shadow-inner">
+<button class="px-2.5 py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm flex items-center gap-1 shadow-xs transition-all" id="viewMapBtn">
+<span class="material-symbols-outlined text-[14px]">map</span>
+        지도보기
+      </button>
+<button class="px-2.5 py-1 rounded-full text-text-subtle font-label-sm text-label-sm flex items-center gap-1 hover:text-on-surface transition-all" id="viewListBtn">
+<span class="material-symbols-outlined text-[14px]">format_list_bulleted</span>
+        목록만
+      </button>
+</div>
+</div>
+<!-- 인터랙티브 미니 지도 컨테이너 -->
+<div class="relative w-full h-56 rounded-2xl overflow-hidden shadow-[0_4px_16px_-2px_rgba(92,60,48,0.08)] mb-space-md transition-all duration-300" id="mapSection">
+<!-- 배경 지도 컴포넌트 -->
+<div class="w-full h-full bg-cover bg-center" data-location="Seoul Forest, Seongsu-dong, Seoul, South Korea" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9D1yJZqWyHBexsrr9UMMMdVn-DlMVvytJcLIP94nowQ5rgmtkSijK3-rgjX8lt8CGvuaAEVsJCzuGyozes8zhZWbvVqSCSksHTZWjFyNdzbN1WDFCD60VyKzOSGz63NHUMFFBzkFvwlqUWEorE2JPD5g1z3iSVhYl9VdiBtdfBKKQlql8t7pi4UHb2XybsvQbMOT5GSPhWYiBtU_jkgwz4j_gNq-PSw6swFJfR2UjRGIxn-UscijK')"></div>
+<!-- 지도 위 오버레이 그라디언트 -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none"></div>
+<!-- 인터랙티브 위치 핀 마커 1: 서울숲 -->
+<button class="map-marker absolute top-10 left-12 group flex flex-col items-center focus:outline-none transition-transform hover:scale-110 active:scale-95" onclick="focusCard(0)" type="button">
+<div class="px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur-md shadow-md text-primary font-label-sm text-label-sm flex items-center gap-1 border-baby-peach">
+<span class="material-symbols-outlined text-[14px] text-sage-mint">park</span>
+<span class="font-bold">서울숲</span>
+</div>
+<div class="w-3 h-3 bg-primary rotate-45 -mt-1.5 rounded-[2px] shadow-sm"></div>
+</button>
+<!-- 인터랙티브 위치 핀 마커 2: 키즈카페 -->
+<button class="map-marker absolute top-20 right-10 group flex flex-col items-center focus:outline-none transition-transform hover:scale-110 active:scale-95" onclick="focusCard(1)" type="button">
+<div class="px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur-md shadow-md text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-baby-peach">toys</span>
+<span class="font-bold">릴리펏 한남</span>
+</div>
+<div class="w-3 h-3 bg-baby-peach rotate-45 -mt-1.5 rounded-[2px] shadow-sm"></div>
+</button>
+<!-- 인터랙티브 위치 핀 마커 3: 국립어린이과학관 -->
+<button class="map-marker absolute bottom-8 left-28 group flex flex-col items-center focus:outline-none transition-transform hover:scale-110 active:scale-95" onclick="focusCard(2)" type="button">
+<div class="px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur-md shadow-md text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-sun-honey">science</span>
+<span class="font-bold">국립어린이과학관</span>
+</div>
+<div class="w-3 h-3 bg-sun-honey rotate-45 -mt-1.5 rounded-[2px] shadow-sm"></div>
+</button>
+<!-- 현위치 리프레시 버튼 & 길찾기 단축 뱃지 -->
+<div class="absolute bottom-3 right-3 flex items-center gap-2">
+<button aria-label="현재 위치 재탐색" class="w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface shadow-md flex items-center justify-center hover:text-primary active:scale-90 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">my_location</span>
+</button>
+<div class="px-3 py-1.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-text-charcoal font-label-sm text-label-sm shadow-md flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-sage-mint animate-pulse"></span>
+<span>반경 5km 탐색</span>
+</div>
+</div>
+</div>
+<!-- 추천 장소 리스트 컨테이너 -->
+<div class="flex flex-col gap-space-md">
+<!-- 장소 카드 1: 서울숲 가족마당 & 곤충식물원 -->
+<article class="place-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_16px_-2px_rgba(92,60,48,0.06)] hover:shadow-[0_8px_24px_-4px_rgba(92,60,48,0.1)] transition-all flex flex-col" id="place-card-0">
+<div class="relative w-full h-44">
+<img class="w-full h-full object-cover" data-alt="Sunlit green lawn and peaceful shaded walking path at Seoul Forest family park, stroller gently rolling, warm pastel morning light, soft ivory and mint natural tones, cozy warm atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBrSs6dDJxAXa1KffsQGXQKvIiU3lI5fOXJQ6t_VNSzX48fsnMlwa1z4yikTnuSiyFSvhYjQWXgclOug5Fk_Q1SiQwAiebeKl3txseZa5wMj6bGJlEs3hBbBa9ueH1wJ6XaioF-MCHr_OftOQyYge38HsxrmSieM-yyx_N1ajg4qd3GtF1zVzpGSD8XO0jWcdG1g8AgiSWkQcYMK735p6Kf1h2h80uQ0ZERGUZx1hM1azAovSw8uzY"/>
+<!-- 상단 찜하기 및 거리 뱃지 -->
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">near_me</span>
+<span>1.2 km</span>
+</div>
+<button aria-label="관심 장소 저장" class="bookmark-btn absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-text-subtle hover:text-baby-peach shadow-sm active:scale-90 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+<!-- 테마 태그 오버레이 -->
+<div class="absolute bottom-2.5 left-3 px-2.5 py-1 rounded-md bg-on-surface/70 backdrop-blur-sm text-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-sage-mint">nature_people</span>
+<span>자연 친화 산책로 · 피크닉 명소</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-2.5">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">서울숲 가족마당 &amp; 곤충식물원</h2>
+<p class="font-body-sm text-body-sm text-text-subtle mt-0.5">서울 성동구 뚝섬로 273 (상시 개방)</p>
+</div>
+<!-- 평점 -->
+<div class="flex items-center gap-1 bg-honey-subtle px-2 py-1 rounded-lg shrink-0">
+<span class="material-symbols-outlined text-sun-honey text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-lg text-label-lg text-tertiary">4.9</span>
+<span class="font-label-sm text-label-sm text-text-subtle">(328)</span>
+</div>
+</div>
+<!-- 아기 친화 편의시설 뱃지 그리드 -->
+<div class="flex flex-wrap gap-1.5 pt-0.5">
+<span class="px-2.5 py-1 rounded-full bg-sage-subtle text-sage-mint font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">stroller</span>
+            유모차 진입 최상
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-peach-subtle text-baby-peach font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">baby_changing_station</span>
+            수유실 도보 2분
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high/60 text-text-charcoal font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">park</span>
+            넓은 잔디밭
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-honey-subtle text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_parking</span>
+            공영주차장 완비
+          </span>
+</div>
+<!-- 실시간 부모 리뷰 요약 카드 -->
+<div class="p-3 rounded-xl bg-cream-ivory flex items-start gap-2.5">
+<div class="w-7 h-7 rounded-full bg-peach-subtle flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[15px]">format_quote</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">준우맘 (생후 8개월)</span>
+<span class="font-label-sm text-label-sm text-text-subtle">· 2일 전 방문</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-charcoal line-clamp-2">
+              “디럭스 유모차 끌고 가도 턱이 없어서 산책하기 너무 편해요! 방문자센터 1층 수유실에 전자레인지랑 정수기도 잘 구비되어 있어서 이유식 먹이기 수월했습니다.”
+            </p>
+</div>
+</div>
+<!-- 액션 버튼 영역 -->
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 h-11 rounded-full bg-peach-subtle text-baby-peach font-label-lg text-label-lg flex items-center justify-center gap-1 hover:bg-baby-peach hover:text-white transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+            전화/안내
+          </button>
+<a class="flex-1 h-11 rounded-full bg-baby-peach text-white font-label-lg text-label-lg flex items-center justify-center gap-1 shadow-sm hover:brightness-95 transition-all active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+            길찾기 바로가기
+          </a>
+</div>
+</div>
+</article>
+<!-- 장소 카드 2: 릴리펏 키즈&베이비 카페 한남점 -->
+<article class="place-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_16px_-2px_rgba(92,60,48,0.06)] hover:shadow-[0_8px_24px_-4px_rgba(92,60,48,0.1)] transition-all flex flex-col" id="place-card-1">
+<div class="relative w-full h-44">
+<img class="w-full h-full object-cover" data-alt="Cozy premium baby and toddler indoor cafe, pastel colored ball pit, wooden soft play toys, bright warm ivory interior, calm joyful family ambiance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWWOSRx2qjBGw9sA04IMf4s-Fi90SaS56KyEp8ySZnyrUOC8o37WIQ7xIRGINUztTUKL0EGvXRup9Vc7pwBSWycwdBiajdwEfX6tWqwtiUcuGtb35M93pMEQZd7QJ4EuLx99UFkhERAPokcaaHuB0Lf8Hm-fx-J1YPYqsxfeDRtCil6lGTJ75Um40wrbZE9HTtP4gplMUGJuegOh9aFCkbEcdKU-dP5DL0Y_crvEADkVYP52vn7Txe"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">near_me</span>
+<span>2.8 km</span>
+</div>
+<button aria-label="관심 장소 저장" class="bookmark-btn absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-text-subtle hover:text-baby-peach shadow-sm active:scale-90 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+<div class="absolute bottom-2.5 left-3 px-2.5 py-1 rounded-md bg-on-surface/70 backdrop-blur-sm text-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-sun-honey">toys</span>
+<span>영유아 전문 놀이 · 식음료 올인원</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-2.5">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">릴리펏 키즈&amp;베이비 카페 한남점</h2>
+<p class="font-body-sm text-body-sm text-text-subtle mt-0.5">서울 용산구 독서당로 85 2층 (매일 10:30 - 20:00)</p>
+</div>
+<div class="flex items-center gap-1 bg-honey-subtle px-2 py-1 rounded-lg shrink-0">
+<span class="material-symbols-outlined text-sun-honey text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-lg text-label-lg text-tertiary">4.8</span>
+<span class="font-label-sm text-label-sm text-text-subtle">(194)</span>
+</div>
+</div>
+<!-- 편의시설 뱃지 -->
+<div class="flex flex-wrap gap-1.5 pt-0.5">
+<span class="px-2.5 py-1 rounded-full bg-peach-subtle text-baby-peach font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sports_volleyball</span>
+            영유아 전용 볼풀장
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-sage-subtle text-sage-mint font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">support_agent</span>
+            전문 케어 스태프 상주
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high/60 text-text-charcoal font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">chair_alt</span>
+            원목 아기의자
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-honey-subtle text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_parking</span>
+            발렛파킹 지원
+          </span>
+</div>
+<!-- 실시간 부모 리뷰 요약 -->
+<div class="p-3 rounded-xl bg-cream-ivory flex items-start gap-2.5">
+<div class="w-7 h-7 rounded-full bg-peach-subtle flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[15px]">format_quote</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">서아아빠 (생후 14개월)</span>
+<span class="font-label-sm text-label-sm text-text-subtle">· 어제 방문</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-charcoal line-clamp-2">
+              “돌 아기 데리고 처음 갔는데 안전요원 분들이 상시 지켜봐 주셔서 커피 한잔 여유 있게 마셨어요. 기저귀실에 유기농 물티슈와 로션까지 센스 있게 세팅되어 감동했습니다.”
+            </p>
+</div>
+</div>
+<!-- 액션 버튼 영역 -->
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 h-11 rounded-full bg-peach-subtle text-baby-peach font-label-lg text-label-lg flex items-center justify-center gap-1 hover:bg-baby-peach hover:text-white transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+            테이블 예약
+          </button>
+<a class="flex-1 h-11 rounded-full bg-baby-peach text-white font-label-lg text-label-lg flex items-center justify-center gap-1 shadow-sm hover:brightness-95 transition-all active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+            길찾기 바로가기
+          </a>
+</div>
+</div>
+</article>
+<!-- 장소 카드 3: 국립어린이과학관 영유아놀이터 -->
+<article class="place-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_16px_-2px_rgba(92,60,48,0.06)] hover:shadow-[0_8px_24px_-4px_rgba(92,60,48,0.1)] transition-all flex flex-col" id="place-card-2">
+<div class="relative w-full h-44">
+<img class="w-full h-full object-cover" data-alt="Interactive toddler science playroom with rounded wooden obstacles, sensory water stream play table, bright warm daylight through skylight, modern safe design for infants and babies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIRrWVIj5cXIE363Tr4Q6i_HLMmxlIY60HgDW_cBff3HpIPlwCchbr2jqxIBtFV84qrqxM-7Y_hf4cW86JtD-qg-oi_p1Qgh2iPCOAz6kgsCupRmFlxp_um_lpnrD9DLxbsJktP_zp6QpkstYEhJzLeHBkTGmJ5lIkMZiSLJC64uF8_XdJUdtLHS3s10cTqBWXjG4TEd1qu5KfIJNw3EyWdSz3RqX12CV4BjFmHW1r8gDCjEBz6ohx"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">near_me</span>
+<span>4.1 km</span>
+</div>
+<button aria-label="관심 장소 저장" class="bookmark-btn absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-text-subtle hover:text-baby-peach shadow-sm active:scale-90 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+<div class="absolute bottom-2.5 left-3 px-2.5 py-1 rounded-md bg-on-surface/70 backdrop-blur-sm text-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-sage-mint">sensor_occupied</span>
+<span>실내 감각체험 · 사전 예약제 운영</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-2.5">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">국립어린이과학관 영유아놀이터</h2>
+<p class="font-body-sm text-body-sm text-text-subtle mt-0.5">서울 종로구 창경궁로 215 (월요일 휴관)</p>
+</div>
+<div class="flex items-center gap-1 bg-honey-subtle px-2 py-1 rounded-lg shrink-0">
+<span class="material-symbols-outlined text-sun-honey text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-lg text-label-lg text-tertiary">4.9</span>
+<span class="font-label-sm text-label-sm text-text-subtle">(512)</span>
+</div>
+</div>
+<!-- 편의시설 뱃지 -->
+<div class="flex flex-wrap gap-1.5 pt-0.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">ac_unit</span>
+            실내 쾌적 공기정화
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-peach-subtle text-baby-peach font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event_seat</span>
+            사전예약 필수(쾌적)
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-sage-subtle text-sage-mint font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">stroller</span>
+            유모차 보관소 별도
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-honey-subtle text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_parking</span>
+            주차 2시간 무료
+          </span>
+</div>
+<!-- 실시간 부모 리뷰 요약 -->
+<div class="p-3 rounded-xl bg-cream-ivory flex items-start gap-2.5">
+<div class="w-7 h-7 rounded-full bg-peach-subtle flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[15px]">format_quote</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">도윤맘 (생후 18개월)</span>
+<span class="font-label-sm text-label-sm text-text-subtle">· 3일 전 방문</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-charcoal line-clamp-2">
+              “인원제한 예약제로 운영돼서 아기들이 부딪히지 않고 마음껏 기어다니며 놀 수 있어요. 층마다 아기 화장실과 기저귀 교환대가 새것처럼 깨끗해요!”
+            </p>
+</div>
+</div>
+<!-- 액션 버튼 영역 -->
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 h-11 rounded-full bg-peach-subtle text-baby-peach font-label-lg text-label-lg flex items-center justify-center gap-1 hover:bg-baby-peach hover:text-white transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[18px]">confirmation_number</span>
+            회차별 예약현황
+          </button>
+<a class="flex-1 h-11 rounded-full bg-baby-peach text-white font-label-lg text-label-lg flex items-center justify-center gap-1 shadow-sm hover:brightness-95 transition-all active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+            길찾기 바로가기
+          </a>
+</div>
+</div>
+</article>
+</div>
+<!-- 하단 팁 배너: 안심 나들이 가이드 -->
+<div class="mt-space-lg p-4 rounded-2xl bg-gradient-to-r from-peach-subtle to-honey-subtle shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-baby-peach shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[22px]">health_and_safety</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface">나들이 전 꿀팁!</span>
+<span class="font-body-sm text-body-sm text-text-subtle">수유실 온수 지원 여부와 유모차 무료 대여소를 앱에서 실시간으로 확인해보세요.</span>
+</div>
+</div>
+</div>
+<script>
+  // 지도 핀 클릭 시 해당 카드로 스무스 스크롤 & 포커스 하이라이트
+  function focusCard(index) {
+    const card = document.getElementById(`place-card-${index}`);
+    if (card) {
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      card.classList.add('ring-2', 'ring-baby-peach', 'scale-[1.01]');
+      setTimeout(() => {
+        card.classList.remove('ring-2', 'ring-baby-peach', 'scale-[1.01]');
+      }, 1200);
+    }
+  }
+
+  // 퀵 태그 인터랙션 (토글 상태 활성화)
+  document.querySelectorAll('.tag-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tag-chip').forEach(b => {
+        b.classList.remove('bg-peach-subtle', 'text-primary');
+        b.classList.add('bg-surface-container-lowest', 'text-text-charcoal');
+      });
+      btn.classList.add('bg-peach-subtle', 'text-primary');
+      btn.classList.remove('bg-surface-container-lowest', 'text-text-charcoal');
+    });
+  });
+
+  // 지도 접기 / 펼치기 토글
+  const mapSection = document.getElementById('mapSection');
+  const viewMapBtn = document.getElementById('viewMapBtn');
+  const viewListBtn = document.getElementById('viewListBtn');
+
+  if (viewListBtn && mapSection && viewMapBtn) {
+    viewListBtn.addEventListener('click', () => {
+      mapSection.classList.add('hidden');
+      viewListBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+      viewListBtn.classList.remove('text-text-subtle');
+      viewMapBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+      viewMapBtn.classList.add('text-text-subtle');
+    });
+
+    viewMapBtn.addEventListener('click', () => {
+      mapSection.classList.remove('hidden');
+      viewMapBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+      viewMapBtn.classList.remove('text-text-subtle');
+      viewListBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+      viewListBtn.classList.add('text-text-subtle');
+    });
+  }
+
+  // 북마크 클릭 인터랙션
+  document.querySelectorAll('.bookmark-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon) {
+        const isFilled = icon.style.fontVariationSettings.includes('FILL 1');
+        if (isFilled) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          btn.classList.remove('text-baby-peach');
+          btn.classList.add('text-text-subtle');
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          btn.classList.remove('text-text-subtle');
+          btn.classList.add('text-baby-peach');
+        }
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(92,60,48,0.06)]" data-active-classes="text-primary font-label-md"><div class="max-w-[480px] mx-auto h-16 px-space-xs flex items-center justify-around"><a class="flex-1 flex flex-col items-center justify-center h-full text-text-subtle transition-colors group" data-path="baby-log-home" href="#"><span class="material-symbols-outlined text-[24px] group-hover:text-primary transition-colors">edit_calendar</span><span class="font-label-sm text-label-sm mt-0.5">육아기록</span></a><a class="flex-1 flex flex-col items-center justify-center h-full text-text-subtle transition-colors group" data-path="community-feed" href="#"><span class="material-symbols-outlined text-[24px] group-hover:text-primary transition-colors">forum</span><span class="font-label-sm text-label-sm mt-0.5">커뮤니티</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center h-full transition-colors group text-primary font-label-md" data-path="outing-map" href="#"><span class="material-symbols-outlined text-[24px] group-hover:text-primary transition-colors">explore</span><span class="font-label-sm text-label-sm mt-0.5">나들이 지도</span></a><a class="flex-1 flex flex-col items-center justify-center h-full text-text-subtle transition-colors group" data-path="market-shop" href="#"><span class="material-symbols-outlined text-[24px] group-hover:text-primary transition-colors">local_mall</span><span class="font-label-sm text-label-sm mt-0.5">육아옷 마켓</span></a></div></nav></body></html>
